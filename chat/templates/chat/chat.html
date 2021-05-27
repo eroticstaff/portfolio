@@ -1,0 +1,230 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Chat</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="{% static 'bootstrap/assets/css/material-dashboard.css' %}" rel="stylesheet"/>
+    <link href="{% static 'chat/chat.css' %}" rel="stylesheet"/>
+
+    <style>
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .card-item-body {
+            overflow-y: scroll;
+            height: 300px;
+        }
+
+        .card-item {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);;
+        }
+
+        .card-comp {
+            float: left;
+        }
+
+        .card-tasks {
+            height: 140px;
+        }
+
+        .btn-uncompleted {
+            background-color: #9fd3b6 !important;
+        }
+
+        .card-settings svg {
+            float: right;
+        }
+
+        .card-settings svg:hover {
+            fill: darkseagreen;
+        }
+
+        .card-settings-button {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+        }
+
+        .card-delete-button {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+        }
+
+        .card-task-add-button {
+            background-color: Transparent;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="white">
+        <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+        <div class="logo">
+            <a href="#" class="simple-text logo-mini">
+                SM
+            </a>
+            <a href="#" class="simple-text logo-normal">
+                Seraph Manager
+            </a>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li class="nav-item active  ">
+                    <a class="nav-link" href="#0">
+                        <i class="material-icons">dashboard</i>
+                        <p>Organizer</p>
+                    </a>
+                </li>
+                <li class="nav-item active  ">
+                    <a class="nav-link" href="#0">
+                        <i class="material-icons">chat</i>
+                        <p>Chat</p>
+                    </a>
+                </li>
+                <!-- your sidebar here -->
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <a class="navbar-brand" href="javascript:;">Chat</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon icon-bar"></span>
+                    <span class="navbar-toggler-icon icon-bar"></span>
+                    <span class="navbar-toggler-icon icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:;">
+                                <i class="material-icons">notifications</i> Notifications
+                            </a>
+                        </li>
+                        <!-- your navbar here -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="flexboxes">
+
+
+                    <div class="contacts">
+
+                        <h1 class="head">Контакты</h1>
+                        <input class="inputSearch" type="text" placeholder="Поиск">
+                        <a class="button1" href="">
+                            <img src="{% static 'chat/img/Group_3.png' %}" width="15px" height="15px" alt="">
+
+                        </a>
+                        <a class="button2" href="">
+                            <img src="{% static 'chat/img/enter-arrow.png' %}" width="20px" height="15px" alt="">
+                        </a>
+
+                        <div class="group">
+                            <img class="photo" src="{% static 'chat/img/Ellipse_1.png' %}" width="50px" height="50px" alt="">
+                            <h2>Группа 1</h2>
+                        </div>
+
+
+                    </div>
+
+                    <div class="chat">
+
+                        <div class="up">
+                            <img class="photo" src="{% static 'chat/img/Ellipse_1.png' %}" width="40px" height="40px" alt="">
+                            <h2 class="group1">Группа 1</h2>
+                            <img class="three" src="{% static 'chat/img/Group_2.png' %}" width="25px" height="7px" alt="">
+                        </div>
+
+                        <div class="mainChat">
+                            <p class="message1">
+                                Привет, ты запилил эту штуку?
+                            </p>
+                            <p class="message2">
+                                Привет, да, все готово!
+                            </p>
+                            <img class="photoChat" src="{% static 'chat/img/Ellipse_1.png' %}" width="30px" height="30px" alt="">
+                        </div>
+
+                        <input class="inputChat" type="text" placeholder="Сообщение">
+                        <button class="btn btn-info button3">Отправить</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!--   Core JS Files   -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="{% static 'bootstrap/assets/js/core/popper.min.js' %}" type="text/javascript"></script>
+        <script src="{% static 'bootstrap/assets/js/core/bootstrap-material-design.min.js' %}"
+                type="text/javascript"></script>
+
+
+        <script>
+
+
+        </script>
+
+</body>
+
+</html>

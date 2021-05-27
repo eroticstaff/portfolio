@@ -190,3 +190,109 @@
     }
 }
 
+
+.contacts {
+    background-color: #f0f0f0;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.chat {
+    background-color: #d1d1d1;
+    width: 60%;
+}
+
+.panel {
+    width: 15%;
+}
+.flexboxes {
+    display: flex;
+}
+
+.group {
+    display: flex;
+    margin: 10px 0;
+}
+
+h2 {
+    margin: auto 20px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.inputSearch {
+    width: 260px;
+    height: 30px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #d1d1d1;
+    margin: 20px 0 30px;
+}
+
+.head {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 100px 30px;
+}
+
+.up {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.mainChat {
+    position: absolute;
+}
+.inputChat {
+    width: 740px;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    top: 640px;
+    left: 10px;
+    border: 0;
+
+}
+
+.three {
+    margin: auto 20px;
+}
+
+.group1 {
+    margin-right: auto;
+}
+
+.message1 {
+    background-color: #00b9ce;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    top: 420px;
+    left: 50px;
+}
+
+
+.message2 {
+    background-color: #ff9a00;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+    top: 450px;
+    left: 550px;
+}
+
+.photoChat {
+    position: relative;
+    top: 440px;
+    left: 810px;
+}
+
+.button3 {
+    position: relative;
+    top: 640px;
+    left: 10px;
+    height: 45px;
+}

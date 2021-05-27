@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'organizer.apps.OrganizerConfig'
+    'organizer.apps.OrganizerConfig',
+    'chat.apps.ChatConfig'
 ]
 
 MIDDLEWARE = [
